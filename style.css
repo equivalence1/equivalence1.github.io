@@ -1,0 +1,135 @@
+html {
+    background: #eeeeee;
+    font-family: "Arial", Arial, sans-serif;
+    color: #333333;
+}
+
+body {
+    margin-top: 0;
+}
+
+#todo_main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    background: white;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    box-shadow: 0px 0px 5px grey;
+}
+
+#todo_header {
+    text-align: center;
+    padding-top: 10px;
+    display: block;
+    margin-bottom: 0px;
+}
+
+#todo_input {
+    width: 90%;
+    height: 50px;
+    font-size: 24px;
+    margin: 0 auto;
+    border: 1px solid #999999;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+}
+
+#todo_section {
+    width: 90%;
+    margin: 0px auto;
+    display: block;
+    font-size: 16px;
+}
+
+#todo_list {
+    list-style: none;
+    padding: 0px;
+    margin: 10px 0px;
+}
+
+#todo_list li {
+    border-bottom: solid 1px #cccccc;
+}
+
+#todo_list li:last-of-type {
+    border-bottom: none;
+}
+
+.todo_item {
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    padding: 10px 30px 10px 0px;
+    display: block;
+}
+
+.todo_checkbox {
+}
+
+.todo_label {
+    word-wrap: break-word;
+    font-size: 24px;
+}
+
+#todo_list li.done .todo_label {
+    color: #777777;
+    text-decoration: line-through;
+}
+
+.delete_button {
+    display: none;
+    background: url(delete.svg) no-repeat;
+    background-size: 25px 25px;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+#todo_list li:hover .delete_button {
+  	display: block;
+}
+
+#footer {
+    background: #f4fce8;
+    height: 30px;
+    border-top: solid 1px #ededed;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    margin-bottom: -20px;
+}
+
+#todo_cnt {
+    color: #555555;
+    width: 90%;
+    margin: 0px auto;
+    font-size: 14px;
+    padding-top: 8px;
+    padding-left: 13px;
+}
+
+#clear_checked {
+    height: 15px;
+    border-radius: 1em;
+    background: #dce3d1;
+    float: right;
+    cursor: pointer;
+    font-size: 11px;
+    text-decoration: none;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    margin-top: -2px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+}
+
+#clear_checked:hover {
+    background: rgb(202, 210, 191);
+}
+
+/* Cool! Always wanted to know how they do it... */
+#todo_main input::-webkit-input-placeholder {
+	font-style: italic;
+}
